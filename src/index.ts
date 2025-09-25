@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors())
 app.use(express.json());
-app.use('/static', express.static(path.join(__dirname, '..', 'src', 'static')));
+app.use('/static', express.static(path.join(__dirname, '..', 'static')));
 app.use('/api', routes);
 app.use(errorHandler);
 
